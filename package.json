@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Karen1501/Meraki-app.git"
+    "url": "git+https://github.com/dered-dev/merakiapp.git"
   },
   "author": "Wonder Team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Karen1501/Meraki-app/issues"
+    "url": "https://github.com/dered-dev/merakiapp/issues"
   },
-  "homepage": "https://github.com/Karen1501/Meraki-app#readme",
+  "homepage": "https://github.com/dered-dev/merakiapp#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
@@ -24,9 +24,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.28",
     "nodemon": "^2.0.4"
-  },
-  "engines": {
-    "node": "12.18.2",
-    "npm": "2.7.4"
   }
 }
