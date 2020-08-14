@@ -5,9 +5,9 @@ async function auth(request, response, next) {
   try {
     //todas las llamadas deberian de tener un header Authorization con un token valido
     const { authorization } = request.headers;
-    console.log("auth: ", authorization);
+    //console.log("auth: ", authorization);
     const decodedToken = jwt.verify(authorization);
-    console.log("decoded Token:", decodedToken);
+    //console.log("decoded Token:", decodedToken);
     const client = await Client.findById(decodedToken.id);
     request.client = client;
     next();

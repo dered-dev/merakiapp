@@ -6,7 +6,7 @@ const server = require("./src/server");
 dbConnect()
   .then(() => {
     console.log("Database connected");
-    server.listen(8080, () => {
+    server.listen(8081, () => {
       console.log("Server is listening");
     });
   })

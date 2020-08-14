@@ -4,7 +4,7 @@ const router = express.Router();
 const clients = require("../usecases/clients");
 const auth = require("../middlewares/auth");
 
-router.get("/", auth, async (request, response) => {
+router.get("/", async (request, response) => {
   try {
     const allClients = await clients.getAll();
     response.json({
@@ -22,7 +22,7 @@ router.get("/", auth, async (request, response) => {
   }
 });
 
-router.get("/:id", auth, async (request, response) => {
+router.get("/:id", async (request, response) => {
   try {
     const clientId = request.params.id;
     const client = await clients.getById(clientId);
@@ -41,7 +41,7 @@ router.get("/:id", auth, async (request, response) => {
   }
 });
 
-router.patch("/:id", auth, async (request, response) => {
+router.patch("/:id", async (request, response) => {
   try {
     const id = request.params.id;
     const dataToUpdate = request.body;
@@ -61,7 +61,7 @@ router.patch("/:id", auth, async (request, response) => {
   }
 });
 
-router.delete("/:id", auth, async (request, response) => {
+router.delete("/:id", async (request, response) => {
   try {
     const id = request.params.id;
     const clientToDelete = await clients.deletee(id);

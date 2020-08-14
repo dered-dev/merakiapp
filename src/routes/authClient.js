@@ -29,7 +29,7 @@ router.post("/sign-in", async (request, response) => {
       data: {
         token,
       },
-      message: "Sesion iniciada",
+      message: "¡Iniciaste sesión!",
     });
   } catch (error) {
     response.status(401);
