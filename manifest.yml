@@ -1,0 +1,7 @@
+applications:
+- name: Meraki
+  random-route: true
+  memory: 128M
+  force_https: true
+  buildpack: staticfile_buildpack
+  stack: cflinuxfs3
